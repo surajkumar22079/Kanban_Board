@@ -1,0 +1,217 @@
+.disp_option{
+    z-index: 2;
+    position: absolute;
+    top: 26px;
+    left: 42px;
+    display: flex;
+    flex-direction: column;
+}
+.dispbtn{
+    border-radius: 5px;
+    width: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    height: 27px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.dispbtn img{
+    width: 15px;
+    height: 15px;
+}
+.dispDiv{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 295px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 3px 6px;
+    margin: 6px 0;
+    background: rgba(248,248,250,1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.grpsrt{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 20px;
+}
+.grpsrt label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #989898;
+}
+.grpsrt select{
+    border: 2px solid #c2c2c2;
+    padding: 2px 5px;
+    width: 88px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+    border-radius: 5px;
+}
+.dispbtn p{
+    font-size: 13px;
+    margin:  0;
+    font-weight: 600;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    border-radius: 6px;
+    box-shadow: 3px rgb(211, 202, 202);
+    width: 17vw;
+    height: 6rem;
+    margin: 10px 2px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .01);
+    background-color: white;
+    padding: 2px 4px;
+}
+.id{
+    margin: 4px 2px; 
+    font-size: 13px;
+    color: #8e9197;
+}
+.profile_pic{
+    border-radius: 34px;
+}
+.title{
+    text-align: start;
+    margin: 2px 4px;
+    font-size: 10.5px;
+}
+.card-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row-1{
+    justify-content: space-between;
+    padding: 2px 9px;
+}
+.card-row img{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.tag{
+    margin: 3px 3px;
+    font-size: 10.5px;
+    color: #8e9197;
+}
+.dot{
+    border-radius: 20px;
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+
+}
+.overme {
+    width: 200px;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    /* color: red; */
+}
+.overme:hover{
+    overflow: visible;
+    white-space: normal;
+}
+.groupDiv{
+    position: absolute;
+    top: 75px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f5f8;
+    padding: 40px 0px;
+    /* margin: auto; */
+    width: 100%;
+}
+.row-3-col-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1.5px solid #8e9197;
+    border-radius: 6px;
+    padding: 0px 8px;
+    margin: 4px 2px;
+}
+.group_image{
+    width: 20px;
+    height: 20px;
+}
+.plus_more_icon{
+    width: 16px;
+    height: 16px;
+    filter: invert(60%);    
+}
+.btn1{
+    text-decoration: none;
+    border: none;
+    background:none;
+    cursor: pointer;
+}
+.group_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-1 h4{
+    margin: 0;
+}
+.ttl{
+    padding: 0 16px;
+    font-size: 12px;
+}
+.lngth{
+    font-size: 11px;
+    color: #8e9197;
+}
+.task-group{
+    margin: 0px 10px;
+}
+@media screen and (max-width:1000px) and (min-width:701px){
+        .groupDiv{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .ttl{
+            padding: 0px 5px;
+            font-size: 11px;
+        }
+        .task-group{
+            margin: 18px 10px;
+        }
+        .card-container{
+            width: 25vw;
+        }
+}
+
+@media screen and (max-width:700px){
+    .groupDiv{
+        flex-direction: column;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .task-group{
+        width: 91%;
+    }
+    .disp_option{
+        left: 13px;
+    }
+}
