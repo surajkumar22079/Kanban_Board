@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TaskGroup from "./Groupings";
 import "./Card.css"
 import options from "../images/options.png"
@@ -38,8 +38,8 @@ const TaskBoard = ({ data }) => {
             <label htmlFor="groupingSelect">Grouping </label>
             <select id="groupingSelect" onChange={(e) => setGroupingAttribute(e.target.value)}>
               {/* <option value="">Select Grouping</option> */}
-              <option value="userId">User</option>
               <option value="status">Status</option>
+              <option value="userId">User</option>
               <option value="priority">Priority</option>
             </select>
           </div>

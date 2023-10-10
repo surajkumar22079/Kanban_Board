@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'  
-import Card from './Card';
-import dummy_profile from "../images/dummy_profile.png"
+import React, { useEffect, useState } from 'react'   
 import TaskBoard from './TaskBoard';
 
 
@@ -21,6 +19,7 @@ const Fetch = () => {
       })
       .catch((error) => {
         setError(error);
+        
       });
   }, []);
    
